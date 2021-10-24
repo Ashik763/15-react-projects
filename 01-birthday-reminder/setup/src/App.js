@@ -8,9 +8,13 @@ function App() {
               <section className="container"> 
               <h3> {people.length} birthdays today </h3>
               {
-                data.map((person) => <List person={person}/> )
+                people.map((person) => <List key = {person.id} person={person}/> )
               }
-              <button onClick={() =>console.log("clicked")}> 
+              <button onClick={() =>{
+                // console.log("clicked");
+                setPeople([]);
+                
+                }}> 
               Clear All
               
                </button>

@@ -64,7 +64,22 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  display:grid;
+  place-items: center;
 }
+.refresh{
+  padding:5px 15px;
+  border-radius:10px;
+  border-style: none;
+  cursor:pointer;
+  color:black;
+  background-color:dodgerblue;
+  /* position: absolute; */
+  
+  margin:0;
+  align-items: center;
+}
+
 ul {
   list-style-type: none;
 }

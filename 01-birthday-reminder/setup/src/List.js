@@ -1,11 +1,11 @@
 import React from 'react';
 
 const List = ({person}) => {
-  console.log(person);
+  // console.log(person);
   const {id,name,age,image} = person;
   return (
-    <div>
-      <article className="person"> 
+    
+      <article id={id}  className="person"> 
       <img src={image} alt = {name}  /> 
       <div> 
         <h4> {name}  </h4>
@@ -15,7 +15,7 @@ const List = ({person}) => {
       
        </article>
      
-    </div>
+  
   );
 };
 
